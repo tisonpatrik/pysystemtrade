@@ -1,3 +1,4 @@
+
 [project]
 name = "pysystemtrade"
 version = "1.80"
@@ -11,6 +12,7 @@ classifiers = [
     "License :: GNU v3",
     "Operating System :: Linux",
 ]
+dynamic = ["license", "keywords", "dependencies"]
 
 [project.urls]
 "Homepage" = "https://github.com/robcarver17/pysystemtrade"
