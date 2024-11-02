@@ -37,7 +37,7 @@ class myFuturesRawData(RawData):
         :return: rolling estimator of skew
         """
         skew = self.skew(instrument_code, lookback_days=lookback_days)
-
+    
         return -skew
 
     @output()

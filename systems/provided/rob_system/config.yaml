@@ -300,7 +300,7 @@ trading_rules:
           _demean_method: 'historic_average_factor_value_all_assets'
           _lookback_days: 180
   skewrv365:
-     function: systems.provided.rules.factors.factor_trading_rule
+     function: systems.provided.rules.factors.   
      data:
           - 'rawdata.get_demeanded_factor_value'
      other_args:
@@ -507,7 +507,6 @@ instrument_weights:
   MUMMY: 0.00359
   MXP: 0.00509
   NASDAQ_micro: 0.0124
-  NIFTY: 0.00515
   NIKKEI: 0.00359
   NIKKEI400: 0.00359
   NOK: 0.00509
@@ -559,10 +558,6 @@ instrument_weights:
   US3: 0.00512
   US30: 0.00512
   US5: 0.00512
-  USIRS10: 0.004
-  USIRS2ERIS: 0.004
-  USIRS5: 0.004
-  USIRS5ERIS: 0.004
   V2X: 0.0175
   VIX: 0.0175
   VNKI: 0.015
@@ -4958,47 +4953,6 @@ forecast_weights:
     skewabs365: 0.025
     skewrv180: 0.025
     skewrv365: 0.025
-  NIFTY:
-    accel16: 0.031
-    accel32: 0.031
-    accel64: 0.031
-    assettrend16: 0.02
-    assettrend2: 0.01
-    assettrend32: 0.02
-    assettrend4: 0.01
-    assettrend64: 0.02
-    assettrend8: 0.02
-    breakout10: 0.0
-    breakout160: 0.051
-    breakout20: 0.01
-    breakout320: 0.051
-    breakout40: 0.041
-    breakout80: 0.041
-    carry10: 0.026
-    carry125: 0.031
-    carry30: 0.026
-    carry60: 0.031
-    momentum16: 0.02
-    momentum32: 0.031
-    momentum4: 0.005
-    momentum64: 0.031
-    momentum8: 0.015
-    mrinasset1000: 0.051
-    normmom16: 0.02
-    normmom2: 0.01
-    normmom32: 0.02
-    normmom4: 0.01
-    normmom64: 0.02
-    normmom8: 0.02
-    relcarry: 0.051
-    relmomentum10: 0.0
-    relmomentum20: 0.02
-    relmomentum40: 0.031
-    relmomentum80: 0.041
-    skewabs180: 0.026
-    skewabs365: 0.026
-    skewrv180: 0.026
-    skewrv365: 0.026
   NIKKEI:
     accel16: 0.03
     accel32: 0.03
@@ -7090,170 +7044,6 @@ forecast_weights:
     skewabs365: 0.026
     skewrv180: 0.026
     skewrv365: 0.026
-  USIRS10:
-    accel16: 0.0
-    accel32: 0.035
-    accel64: 0.035
-    assettrend16: 0.023
-    assettrend2: 0.0
-    assettrend32: 0.023
-    assettrend4: 0.0
-    assettrend64: 0.023
-    assettrend8: 0.023
-    breakout10: 0.0
-    breakout160: 0.058
-    breakout20: 0.0
-    breakout320: 0.058
-    breakout40: 0.047
-    breakout80: 0.047
-    carry10: 0.029
-    carry125: 0.035
-    carry30: 0.029
-    carry60: 0.035
-    momentum16: 0.023
-    momentum32: 0.035
-    momentum4: 0.0
-    momentum64: 0.035
-    momentum8: 0.0
-    mrinasset1000: 0.058
-    normmom16: 0.023
-    normmom2: 0.0
-    normmom32: 0.023
-    normmom4: 0.0
-    normmom64: 0.023
-    normmom8: 0.023
-    relcarry: 0.058
-    relmomentum10: 0.0
-    relmomentum20: 0.0
-    relmomentum40: 0.035
-    relmomentum80: 0.047
-    skewabs180: 0.029
-    skewabs365: 0.029
-    skewrv180: 0.029
-    skewrv365: 0.029
-  USIRS2ERIS:
-    accel16: 0.0
-    accel32: 0.035
-    accel64: 0.035
-    assettrend16: 0.023
-    assettrend2: 0.0
-    assettrend32: 0.023
-    assettrend4: 0.0
-    assettrend64: 0.023
-    assettrend8: 0.023
-    breakout10: 0.0
-    breakout160: 0.058
-    breakout20: 0.0
-    breakout320: 0.058
-    breakout40: 0.047
-    breakout80: 0.047
-    carry10: 0.029
-    carry125: 0.035
-    carry30: 0.029
-    carry60: 0.035
-    momentum16: 0.023
-    momentum32: 0.035
-    momentum4: 0.0
-    momentum64: 0.035
-    momentum8: 0.0
-    mrinasset1000: 0.058
-    normmom16: 0.023
-    normmom2: 0.0
-    normmom32: 0.023
-    normmom4: 0.0
-    normmom64: 0.023
-    normmom8: 0.023
-    relcarry: 0.058
-    relmomentum10: 0.0
-    relmomentum20: 0.0
-    relmomentum40: 0.035
-    relmomentum80: 0.047
-    skewabs180: 0.029
-    skewabs365: 0.029
-    skewrv180: 0.029
-    skewrv365: 0.029
-  USIRS5:
-    accel16: 0.0
-    accel32: 0.0
-    accel64: 0.038
-    assettrend16: 0.025
-    assettrend2: 0.0
-    assettrend32: 0.025
-    assettrend4: 0.0
-    assettrend64: 0.025
-    assettrend8: 0.025
-    breakout10: 0.0
-    breakout160: 0.063
-    breakout20: 0.0
-    breakout320: 0.063
-    breakout40: 0.0
-    breakout80: 0.051
-    carry10: 0.032
-    carry125: 0.038
-    carry30: 0.032
-    carry60: 0.038
-    momentum16: 0.025
-    momentum32: 0.038
-    momentum4: 0.0
-    momentum64: 0.038
-    momentum8: 0.0
-    mrinasset1000: 0.063
-    normmom16: 0.025
-    normmom2: 0.0
-    normmom32: 0.025
-    normmom4: 0.0
-    normmom64: 0.025
-    normmom8: 0.025
-    relcarry: 0.063
-    relmomentum10: 0.0
-    relmomentum20: 0.0
-    relmomentum40: 0.038
-    relmomentum80: 0.051
-    skewabs180: 0.032
-    skewabs365: 0.032
-    skewrv180: 0.032
-    skewrv365: 0.032
-  USIRS5ERIS:
-    accel16: 0.0
-    accel32: 0.034
-    accel64: 0.034
-    assettrend16: 0.023
-    assettrend2: 0.0
-    assettrend32: 0.023
-    assettrend4: 0.011
-    assettrend64: 0.023
-    assettrend8: 0.023
-    breakout10: 0.0
-    breakout160: 0.057
-    breakout20: 0.0
-    breakout320: 0.057
-    breakout40: 0.046
-    breakout80: 0.046
-    carry10: 0.029
-    carry125: 0.034
-    carry30: 0.029
-    carry60: 0.034
-    momentum16: 0.023
-    momentum32: 0.034
-    momentum4: 0.0
-    momentum64: 0.034
-    momentum8: 0.0
-    mrinasset1000: 0.057
-    normmom16: 0.023
-    normmom2: 0.0
-    normmom32: 0.023
-    normmom4: 0.0
-    normmom64: 0.023
-    normmom8: 0.023
-    relcarry: 0.057
-    relmomentum10: 0.0
-    relmomentum20: 0.0
-    relmomentum40: 0.034
-    relmomentum80: 0.046
-    skewabs180: 0.029
-    skewabs365: 0.029
-    skewrv180: 0.029
-    skewrv365: 0.029
   V2X:
     accel16: 0.0
     accel32: 0.0
@@ -7649,7 +7439,6 @@ forecast_div_multiplier:
   MUMMY: 1.7638690987592822
   MXP: 1.8869756583789032
   NASDAQ_micro: 1.9229844788811248
-  NIFTY: 1.9100894374727921
   NIKKEI: 1.9229844788809998
   NIKKEI400: 1.897900302466627
   NOK: 1.7451532266094305
